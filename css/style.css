@@ -11,7 +11,7 @@ h1 {
 }
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 38px;
+    font-size: 34px;
     text-align: center;
   }
 }
