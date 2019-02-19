@@ -8,20 +8,37 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>Hello, world!</title>
   </head>
   <body>
+        <div class="header">
+            <div class="header-img">
+                <img src="/images/icons8-lizard-64 (1).png" alt="" style="height:50px; width:50px;">
+            </div>
+            <div id="time"></div>  
+        </div>
       <div class="container-fluid">
-          <div class="row">
-              <div class="yikes">
-                    <div id="time"></div>
-                    <video loop="" autoplay="" muted="" playsinline="" width="336"><source src="https://i.gifer.com/4Pbi.mp4" itemprop="contentUrl" type="video/mp4"></video>
-                    <h1 style="font-size: 6vw">Is greg working currently?</h1>
-                    <h1 id="isWorking"></h1>
-              </div>
-                
-                
-          </div>    
+          <div class="row fullPage" id="landing">
+            <div class="tinted-image">
+                <div class="container">
+                    <h4><b>You can't handle the truth</b></h4>
+                    <h1 class="text-white">
+                        We are the last of our<br>
+                        kind. The last lizards<br>
+                        sworn to protect he<br>
+                        who does not work.</h1>
+                </div>
+            </div>
+          </div>
+          <div class="row fullPage" id="isWorking">
+                <div class="yikes">
+                        <!-- <video loop="" autoplay="" muted="" playsinline="" width="336"><source src="https://i.gifer.com/4Pbi.mp4" itemprop="contentUrl" type="video/mp4"></video> -->
+                        <h1 style="font-size: 6vw">Is greg working currently?</h1>
+                        <h1 id="isWorkingText"></h1>
+                </div>
+          </div>   
       </div>
     
 
@@ -52,13 +69,14 @@ startTime();
     </script>
     <script>
         var isWorking = document.getElementById("isWorking");
+        var isWorkingText = document.getElementById("isWorkingText");
         var today = new Date().getHours();
         if (today >= 3 && today <= 24) {
-        document.getElementById("isWorking").style.color = "red";
-        isWorking.innerText="NEGATORY CAPTAIN";
+        document.getElementById("isWorking").style.backgroundColor = "#ff0037";
+        isWorkingText.innerText="NEGATORY CAPTAIN";
         } else {
-            document.getElementById("isWorking").style.color = "green";
-            isWorking.innerText="Possibly? No one really knows..";
+            document.getElementById("isWorking").style.color = "#39b54a";
+            isWorkingText.innerText="Possibly? No one really knows..";
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
