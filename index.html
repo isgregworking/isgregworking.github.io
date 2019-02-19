@@ -71,11 +71,11 @@ startTime();
         var isWorking = document.getElementById("isWorking");
         var isWorkingText = document.getElementById("isWorkingText");
         var today = new Date().getHours();
-        if (today >= 3 && today <= 24) {
+        if (today >= 3 && today <= 12) {
         document.getElementById("isWorking").style.backgroundColor = "#ff0037";
         isWorkingText.innerText="NEGATORY CAPTAIN";
         } else {
-            document.getElementById("isWorking").style.color = "#39b54a";
+            document.getElementById("isWorking").style.backgroundColor = "#39b54a";
             isWorkingText.innerText="Possibly? No one really knows..";
         }
     </script>
