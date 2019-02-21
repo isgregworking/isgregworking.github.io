@@ -17,7 +17,7 @@ h1{
 h4{
     text-transform: uppercase;
     font-size: 1.6rem;
-    color: greenyellow;
+    color: darkseagreen;
     @media only screen and (max-width: 768px) {
         font-size: 1.1rem;
         text-align: center;
@@ -47,15 +47,15 @@ h4{
         rgba(0, 0, 0, 0.875)
       ),
       /* bottom, image */
-      url(https://images.pexels.com/photos/751694/pexels-photo-751694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+      url(https://images.pexels.com/photos/927497/pexels-photo-927497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: left;
       
 
-      @media screen and (max-width: 768px ) {
+      @media screen and (max-width: 1024px ) {
 
-        
+        background-position: center;
       }
 
 }
